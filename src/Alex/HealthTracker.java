@@ -5,8 +5,12 @@
 package Alex;
 
 /**
+ * Author: Alex Sharma (x23436930)
+ * Section: BMI Feature (Navigation)
  *
- * @author Admin
+ * This class is a simple menu window for the BMI part of the project.
+ * When the button is clicked, it opens the BMIPage where the user can
+ * calculate and store their BMI records.
  */
 public class HealthTracker extends javax.swing.JFrame {
     
@@ -60,7 +64,9 @@ public class HealthTracker extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+// When the user clicks this button, I open the BMI calculator screen.
         new BMIPage().setVisible(true);
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
