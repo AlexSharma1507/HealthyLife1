@@ -48,8 +48,11 @@ public class HealthGUI extends javax.swing.JFrame {
         exitBTN = new javax.swing.JButton();
         saveBTN = new javax.swing.JButton();
         clearBTN = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(627, 498));
+        setResizable(false);
 
         healthProfileLBL.setText("Health Profile");
 
@@ -77,44 +80,80 @@ public class HealthGUI extends javax.swing.JFrame {
 
         womanRB.setText("Woman");
 
+        healthTrackerBTN.setBackground(new java.awt.Color(120, 140, 180));
+        healthTrackerBTN.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
+        healthTrackerBTN.setForeground(new java.awt.Color(255, 255, 255));
         healthTrackerBTN.setText("Health Tracker");
+        healthTrackerBTN.setBorderPainted(false);
+        healthTrackerBTN.setOpaque(true);
         healthTrackerBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 healthTrackerBTNActionPerformed(evt);
             }
         });
 
+        habitBuilderBTN.setBackground(new java.awt.Color(120, 140, 180));
+        habitBuilderBTN.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
+        habitBuilderBTN.setForeground(new java.awt.Color(255, 255, 255));
         habitBuilderBTN.setText("Habit Builder");
+        habitBuilderBTN.setBorderPainted(false);
+        habitBuilderBTN.setOpaque(true);
         habitBuilderBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 habitBuilderBTNActionPerformed(evt);
             }
         });
 
+        WellnessEducationBTN.setBackground(new java.awt.Color(120, 140, 180));
+        WellnessEducationBTN.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
+        WellnessEducationBTN.setForeground(new java.awt.Color(255, 255, 255));
         WellnessEducationBTN.setText("Wellness Education");
+        WellnessEducationBTN.setBorderPainted(false);
+        WellnessEducationBTN.setOpaque(true);
         WellnessEducationBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 WellnessEducationBTNActionPerformed(evt);
             }
         });
 
+        exitBTN.setBackground(new java.awt.Color(120, 140, 180));
+        exitBTN.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
+        exitBTN.setForeground(new java.awt.Color(255, 0, 0));
         exitBTN.setText("EXIT");
+        exitBTN.setBorderPainted(false);
+        exitBTN.setOpaque(true);
         exitBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 exitBTNActionPerformed(evt);
             }
         });
 
+        saveBTN.setBackground(new java.awt.Color(120, 140, 180));
+        saveBTN.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
+        saveBTN.setForeground(new java.awt.Color(255, 255, 255));
         saveBTN.setText("SAVE");
+        saveBTN.setBorderPainted(false);
+        saveBTN.setOpaque(true);
 
+        clearBTN.setBackground(new java.awt.Color(120, 140, 180));
+        clearBTN.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
+        clearBTN.setForeground(new java.awt.Color(255, 255, 255));
         clearBTN.setText("CLEAR");
+        clearBTN.setBorderPainted(false);
+        clearBTN.setOpaque(true);
+
+        jLabel1.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("<html>Your personal health hub – check your BMI,<br> build better habits &amp; explore wellness tips.</html> ");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(164, 164, 164)
+                .addGap(78, 78, 78)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(44, 44, 44)
                 .addComponent(healthProfileLBL, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
@@ -148,7 +187,7 @@ public class HealthGUI extends javax.swing.JFrame {
                                 .addComponent(saveBTN)
                                 .addGap(41, 41, 41)
                                 .addComponent(clearBTN)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 9, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(healthTrackerBTN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(habitBuilderBTN, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -162,10 +201,18 @@ public class HealthGUI extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(31, 31, 31)
-                .addComponent(healthProfileLBL)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
+                        .addComponent(healthProfileLBL)
+                        .addGap(29, 29, 29)
+                        .addComponent(healthTrackerBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
+                        .addComponent(habitBuilderBTN)
+                        .addGap(18, 18, 18)
+                        .addComponent(WellnessEducationBTN))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(2, 2, 2)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(nameLBL)
                             .addComponent(nameTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -180,14 +227,7 @@ public class HealthGUI extends javax.swing.JFrame {
                         .addGap(12, 12, 12)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(weightLBL)
-                            .addComponent(weightTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(29, 29, 29)
-                        .addComponent(healthTrackerBTN)
-                        .addGap(18, 18, 18)
-                        .addComponent(habitBuilderBTN)
-                        .addGap(18, 18, 18)
-                        .addComponent(WellnessEducationBTN)))
+                            .addComponent(weightTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(manRB)
@@ -197,7 +237,7 @@ public class HealthGUI extends javax.swing.JFrame {
                     .addComponent(exitBTN)
                     .addComponent(saveBTN)
                     .addComponent(clearBTN))
-                .addContainerGap(37, Short.MAX_VALUE))
+                .addContainerGap(53, Short.MAX_VALUE))
         );
 
         pack();
@@ -276,6 +316,7 @@ public class HealthGUI extends javax.swing.JFrame {
     private javax.swing.JButton healthTrackerBTN;
     private javax.swing.JLabel heightLBL;
     private javax.swing.JTextField heightTF;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JRadioButton manRB;
     private javax.swing.JLabel nameLBL;
     private javax.swing.JTextField nameTF;
